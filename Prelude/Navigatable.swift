@@ -15,7 +15,7 @@ public protocol Navigatable {
 }
 
 public extension Navigatable {
-  func tabBarIndex(activeCategories: [Navigatable]) -> Int? {
-    return nil
+  func tabBarIndex(activeCategories _: [Navigatable]) -> Int? {
+    nil
   }
 }

@@ -10,7 +10,7 @@ import UIKit
 final class OpenTraceNavigator: Navigator {
   let window: UIWindow
   let services = Services()
-  
+
   init(window: UIWindow) {
     self.window = window
   }

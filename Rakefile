@@ -14,6 +14,16 @@ task :swiftgen do
   sh %(mint run swiftgen swiftgen)
 end
 
+desc 'Run Swiftlint'
+task :swiftlint do
+  sh %(mint run swiftlint)
+end
+
+desc 'Run Swiftformat'
+task :swiftformat do
+  sh %(mint run swiftformat swiftformat . --swiftversion 5.2)
+end
+
 def generate_opentrace_project
   sh %(mint run xcodegen xcodegen --spec openTraceProject.yml --use-cache)
 end

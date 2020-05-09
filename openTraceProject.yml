@@ -41,6 +41,14 @@ targets:
             ]
           }
         }
+    postbuildScripts:
+      - script: "rake swiftformat"
+        name: Swiftformat
+      - script: "rake swiftlint"
+        name: Swiftlint
     sources:
       - OpenTrace
+      - OpenTraceCore
+      - OpenTraceUI
+      - Prelude
         

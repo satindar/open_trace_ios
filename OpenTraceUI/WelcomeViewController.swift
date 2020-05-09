@@ -13,13 +13,13 @@ public protocol WelcomeViewModelType {
 
 public final class WelcomeViewController: UIHostingController<WelcomeView> {
   let viewModel: WelcomeViewModelType
-  
+
   init(viewModel: WelcomeViewModelType) {
     self.viewModel = viewModel
     super.init(rootView: WelcomeView())
   }
-  
-  @objc required dynamic init?(coder aDecoder: NSCoder) {
+
+  @objc dynamic required init?(coder _: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 }

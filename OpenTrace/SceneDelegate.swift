@@ -6,20 +6,19 @@
 //  Copyright © 2020 Jaya. All rights reserved.
 //
 
-import UIKit
 import SwiftUI
+import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   var launcher: Launcher?
   var window: UIWindow?
-  
-  func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 
+  func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {
     guard let windowScene = scene as? UIWindowScene else { return }
-    
+
     window = UIWindow(windowScene: windowScene)
     launcher = OpenTraceLauncher(window: window)
-    
+
     launcher?.launch()
     window?.makeKeyAndVisible()
   }

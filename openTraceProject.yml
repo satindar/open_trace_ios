@@ -1,5 +1,9 @@
 name: opentrace
 
+packages:
+  Prelude: 
+    path: Prelude
+
 options:
   bundleIdPrefix: com.jaya
   indentWidth: 2
@@ -50,5 +54,6 @@ targets:
       - OpenTrace
       - OpenTraceCore
       - OpenTraceUI
-      - Prelude
+    dependencies:
+      - package: Prelude
         

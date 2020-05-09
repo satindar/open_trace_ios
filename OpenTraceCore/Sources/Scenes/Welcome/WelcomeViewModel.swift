@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Prelude
 
 final class WelcomeViewModel: WelcomeViewModelType {
   let navigator: Navigator

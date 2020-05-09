@@ -9,4 +9,5 @@ import Foundation
 
 public struct Services {
   // No services defined yet
+  public init() {}
 }

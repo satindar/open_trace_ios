@@ -1,4 +1,5 @@
 Carthage/
 Mint/
+.swiftpm/
 *.xcodeproj/
 Info.plist

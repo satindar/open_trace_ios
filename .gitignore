@@ -1,0 +1,4 @@
+Carthage/
+Mint/
+*.xcodeproj/
+*Info.plist

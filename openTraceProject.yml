@@ -1,0 +1,46 @@
+name: opentrace
+
+options:
+  bundleIdPrefix: com.jaya
+  indentWidth: 2
+  tabWidth: 2
+
+schemes:
+  OpenTrace - Debug:
+    build:
+      targets:
+        OpenTrace: all
+
+targets:
+  OpenTrace:
+    type: application
+    platform: iOS
+    deploymentTarget: "13.0"
+    entitlements:
+      path: OpenTrace/OpenTrace.entitlements
+      properties:
+        application-identifier: com.jaya.opentrace
+    info:
+      path: OpenTrace/Info.plist
+      properties:
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UILaunchStoryboardName: LaunchScreen
+        LSRequiresIPhoneOS: true
+        UIRequiredDeviceCapabilities: [arm7]
+        NSAppTransportSecurity: {
+          NSAllowsLocalNetworking: true
+        }
+        UIApplicationSceneManifest: {
+          UIApplicationSupportsMultipleScenes: false,
+          UISceneConfigurations: {
+            UIWindowSceneSessionRoleApplication: [
+              {
+                UISceneConfigurationName: "Default Configuration",
+                UISceneDelegateClassName: "$(PRODUCT_MODULE_NAME).SceneDelegate"
+              }
+            ]
+          }
+        }
+    sources:
+      - OpenTrace
+        

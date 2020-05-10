@@ -5,6 +5,7 @@
 //  Created by Satindar Dhillon on 5/9/20.
 //
 
+import OpenTraceUI
 import Prelude
 import UIKit
 

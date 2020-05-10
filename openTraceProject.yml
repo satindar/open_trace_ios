@@ -3,6 +3,8 @@ name: opentrace
 packages:
   Prelude: 
     path: Prelude
+  OpenTraceUI:
+    path: OpenTraceUI
 
 options:
   bundleIdPrefix: com.jaya
@@ -53,7 +55,7 @@ targets:
     sources:
       - OpenTrace
       - OpenTraceCore
-      - OpenTraceUI
     dependencies:
       - package: Prelude
+      - package: OpenTraceUI
         

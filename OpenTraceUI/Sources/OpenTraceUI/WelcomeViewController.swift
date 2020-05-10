@@ -5,6 +5,7 @@
 //  Created by Satindar Dhillon on 5/9/20.
 //
 
+import Prelude
 import SwiftUI
 
 public protocol WelcomeViewModelType {
@@ -14,7 +15,7 @@ public protocol WelcomeViewModelType {
 public final class WelcomeViewController: UIHostingController<WelcomeView> {
   let viewModel: WelcomeViewModelType
 
-  init(viewModel: WelcomeViewModelType) {
+  public init(viewModel: WelcomeViewModelType) {
     self.viewModel = viewModel
     super.init(rootView: WelcomeView())
   }

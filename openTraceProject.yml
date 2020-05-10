@@ -5,6 +5,8 @@ packages:
     path: Prelude
   OpenTraceUI:
     path: OpenTraceUI
+  OpenTraceCore:
+    path: OpenTraceCore
 
 options:
   bundleIdPrefix: com.jaya
@@ -54,8 +56,6 @@ targets:
         name: Swiftlint
     sources:
       - OpenTrace
-      - OpenTraceCore
     dependencies:
-      - package: Prelude
-      - package: OpenTraceUI
+      - package: OpenTraceCore
         

@@ -8,7 +8,7 @@
 import Prelude
 import UIKit
 
-final class OpenTraceLauncher: Launcher {
+public final class OpenTraceLauncher: Launcher {
   private let navigator: Navigator
 
   public init?(window: UIWindow?) {
@@ -19,7 +19,7 @@ final class OpenTraceLauncher: Launcher {
     }
   }
 
-  func launch() {
+  public func launch() {
     navigator.navigate(to: WelcomeDestination())
   }
 }

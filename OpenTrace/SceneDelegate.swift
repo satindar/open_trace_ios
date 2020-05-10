@@ -6,12 +6,11 @@
 //  Copyright © 2020 Jaya. All rights reserved.
 //
 
-import Prelude
-import SwiftUI
+import OpenTraceCore
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-  var launcher: Launcher?
+  var launcher: OpenTraceLauncher?
   var window: UIWindow?
 
   func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {

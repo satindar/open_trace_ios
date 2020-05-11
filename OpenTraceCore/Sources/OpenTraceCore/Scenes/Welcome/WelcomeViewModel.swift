@@ -17,6 +17,6 @@ final class WelcomeViewModel: WelcomeViewModelType {
   }
 
   func navigateForward() {
-    // implement action
+    print("navigate forwatd tapped")
   }
 }

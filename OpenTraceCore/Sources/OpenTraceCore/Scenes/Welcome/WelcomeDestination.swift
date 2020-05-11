@@ -7,7 +7,7 @@
 
 import OpenTraceUI
 import Prelude
-import UIKit
+import SwiftUI
 
 struct WelcomeDestination: Navigatable {
   let requiresAuthentication = false
@@ -15,6 +15,6 @@ struct WelcomeDestination: Navigatable {
 
   func configuredViewController(services _: Services, navigator: Navigator) -> UIViewController {
     let viewModel = WelcomeViewModel(navigator: navigator)
-    return WelcomeViewController(viewModel: viewModel)
+    return UIHostingController(rootView: WelcomeView(viewModel: viewModel))
   }
 }

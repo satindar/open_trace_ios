@@ -1,5 +1,5 @@
 strings:
-  inputs: OpenTrace/Localizable.strings
+  inputs: OpenTrace/base.lproj/Localizable.strings
   outputs:
     templatePath: Templates/OpenTraceStringTemplate.stencil
     output: Prelude/Sources/Prelude/LocalizedStrings/OpenTraceString.swift

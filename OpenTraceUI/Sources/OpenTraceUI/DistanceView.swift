@@ -1,10 +1,11 @@
+import Prelude
 import SwiftUI
 
 public struct DistanceView: View {
   public init() {}
 
   public var body: some View {
-    Text("Distance")
+    Text(String.Local.distance)
   }
 }
 

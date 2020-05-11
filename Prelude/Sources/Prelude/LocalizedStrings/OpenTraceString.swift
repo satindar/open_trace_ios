@@ -5,6 +5,6 @@ import Foundation
 
 public extension String {
   struct Local {
-    public static let distance = NSLocalizedString("distance", comment: "")
+    public static let distance = NSLocalizedString("distance", bundle: Bundle.main, comment: "")
   }
 }

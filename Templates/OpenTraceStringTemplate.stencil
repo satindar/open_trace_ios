@@ -3,6 +3,7 @@
 
 import Foundation
 
+// swiftlint:disable all
 public extension String {
   struct Local {
     {% if tables.count > 0 %}

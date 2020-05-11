@@ -18,26 +18,21 @@ extension TabBarDestination: Navigatable {
   }
 
   private func viewController(services _: Services, navigator _: Navigator) -> UINavigationController {
+    let navCon = UINavigationController(
+      rootViewController: UIHostingController(rootView: DistanceView())
+    )
+
     switch self {
     case .distance:
-      let navCon = UINavigationController(
-        rootViewController: UIHostingController(rootView: DistanceView())
-      )
-      navCon.tabBarItem = tabBarItem
-      return navCon
+      navCon.viewControllers = [UIHostingController(rootView: DistanceView())]
     case .history:
-      let navCon = UINavigationController(
-        rootViewController: UIHostingController(rootView: HistoryView())
-      )
-      navCon.tabBarItem = tabBarItem
-      return navCon
+      navCon.viewControllers = [UIHostingController(rootView: HistoryView())]
     case .settings:
-      let navCon = UINavigationController(
-        rootViewController: UIHostingController(rootView: SettingsView())
-      )
-      navCon.tabBarItem = tabBarItem
-      return navCon
+      navCon.viewControllers = [UIHostingController(rootView: SettingsView())]
     }
+
+    navCon.tabBarItem = tabBarItem
+    return navCon
   }
 
   private var tabBarItem: UITabBarItem {
@@ -64,11 +59,11 @@ extension TabBarDestination: Navigatable {
   }
 
   private static func tabBarVC(services: Services, navigator: Navigator) -> UITabBarController {
-    let tabBar = UITabBarController()
-    tabBar.tabBar.tintColor = .systemRed
-    tabBar.viewControllers = TabBarDestination.allCases.map {
+    let tabBarController = UITabBarController()
+    tabBarController.tabBar.tintColor = .systemRed
+    tabBarController.viewControllers = TabBarDestination.allCases.map {
       $0.viewController(services: services, navigator: navigator)
     }
-    return tabBar
+    return tabBarController
   }
 }

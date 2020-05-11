@@ -17,6 +17,6 @@ final class WelcomeViewModel: WelcomeViewModelType {
   }
 
   func navigateForward() {
-    print("navigate forwatd tapped")
+    navigator.navigate(to: TabBarDestination.distance)
   }
 }

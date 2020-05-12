@@ -5,7 +5,7 @@
 //  Created by Satindar Dhillon on 5/9/20.
 //
 
-import Prelude
+import OpenTraceSupport
 import SwiftUI
 
 public protocol WelcomeViewModelType {

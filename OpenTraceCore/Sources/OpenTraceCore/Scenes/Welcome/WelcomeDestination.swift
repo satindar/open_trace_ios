@@ -5,8 +5,8 @@
 //  Created by Satindar Dhillon on 5/9/20.
 //
 
+import OpenTraceSupport
 import OpenTraceUI
-import Prelude
 import SwiftUI
 
 struct WelcomeDestination: Navigatable {

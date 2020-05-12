@@ -6,8 +6,8 @@
 //
 
 import Foundation
+import OpenTraceSupport
 import OpenTraceUI
-import Prelude
 
 final class WelcomeViewModel: WelcomeViewModelType {
   let navigator: Navigator

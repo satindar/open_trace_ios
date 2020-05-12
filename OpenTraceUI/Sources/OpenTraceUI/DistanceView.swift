@@ -1,4 +1,4 @@
-import Prelude
+import OpenTraceSupport
 import SwiftUI
 
 public struct DistanceView: View {

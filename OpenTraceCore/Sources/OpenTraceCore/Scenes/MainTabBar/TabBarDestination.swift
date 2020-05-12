@@ -1,5 +1,5 @@
+import OpenTraceSupport
 import OpenTraceUI
-import Prelude
 import SwiftUI
 import UIKit
 

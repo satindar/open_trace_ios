@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-  name: "Prelude",
+  name: "OpenTraceSupport",
   platforms: [
     .iOS(.v13)
   ],
   products: [
-    .library(name: "Prelude", targets: ["Prelude"])
+    .library(name: "OpenTraceSupport", targets: ["OpenTraceSupport"])
   ],
   dependencies: [
     .package(url: "https://github.com/Quick/Quick", .exact("2.2.0")),
@@ -15,12 +15,12 @@ let package = Package(
   ],
   targets: [
     .target(
-      name: "Prelude",
+      name: "OpenTraceSupport",
       dependencies: []
     ),
     .testTarget(
-      name: "PreludeTests",
-      dependencies: ["Prelude", "Quick", "Nimble"]
+      name: "OpenTraceSupportTests",
+      dependencies: ["OpenTraceSupport", "Quick", "Nimble"]
     )
   ]
 )

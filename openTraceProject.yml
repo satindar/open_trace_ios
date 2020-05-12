@@ -1,8 +1,8 @@
 name: opentrace
 
 packages:
-  Prelude: 
-    path: Prelude
+  OpenTraceSupport: 
+    path: OpenTraceSupport
   OpenTraceUI:
     path: OpenTraceUI
   OpenTraceCore:

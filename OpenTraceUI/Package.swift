@@ -10,9 +10,9 @@ let package = Package(
     .library(name: "OpenTraceUI", targets: ["OpenTraceUI"])
   ],
   dependencies: [
-    .package(url: "../Prelude", from: "1.0.0")
+    .package(url: "../OpenTraceSupport", from: "1.0.0")
   ],
   targets: [
-    .target(name: "OpenTraceUI", dependencies: ["Prelude"])
+    .target(name: "OpenTraceUI", dependencies: ["OpenTraceSupport"])
   ]
 )

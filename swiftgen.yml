@@ -2,4 +2,4 @@ strings:
   inputs: OpenTrace/base.lproj/Localizable.strings
   outputs:
     templatePath: Templates/OpenTraceStringTemplate.stencil
-    output: Prelude/Sources/Prelude/LocalizedStrings/OpenTraceString.swift
+    output: OpenTraceUI/Sources/OpenTraceUI/LocalizedStrings/OpenTraceString.swift

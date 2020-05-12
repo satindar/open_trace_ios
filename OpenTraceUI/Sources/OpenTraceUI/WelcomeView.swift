@@ -23,9 +23,9 @@ public struct WelcomeView: View {
   public var body: some View {
     VStack(spacing: 20) {
       PagerView(pageCount: 3, currentIndex: $currentPage) {
-        Color.blue
-        Color.red
-        Color.green
+        Color.appPrimary
+        Color.appGreen
+        Color.appGrey
       }
       Button(action: handleButtonTap) {
         Text("Continue")

@@ -9,8 +9,18 @@ let package = Package(
   products: [
     .library(name: "Prelude", targets: ["Prelude"])
   ],
-  dependencies: [],
+  dependencies: [
+    .package(url: "https://github.com/Quick/Quick", .exact("2.2.0")),
+    .package(url: "https://github.com/Quick/Nimble", .exact("8.0.7"))
+  ],
   targets: [
-    .target(name: "Prelude", dependencies: [])
+    .target(
+      name: "Prelude",
+      dependencies: []
+    ),
+    .testTarget(
+      name: "PreludeTests",
+      dependencies: ["Prelude", "Quick", "Nimble"]
+    )
   ]
 )

@@ -23,7 +23,9 @@ public struct WelcomeView: View {
   public var body: some View {
     VStack(spacing: 20) {
       PagerView(pageCount: 3, currentIndex: $currentPage) {
-        Color.appPrimary
+        Image(uiImage: UIImage.welcomeSceneMap)
+          .resizable()
+          .aspectRatio(contentMode: .fit)
         Color.appGreen
         Color.appGrey
       }

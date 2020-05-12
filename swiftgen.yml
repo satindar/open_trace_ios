@@ -3,3 +3,9 @@ strings:
   outputs:
     templatePath: Templates/OpenTraceStringTemplate.stencil
     output: OpenTraceUI/Sources/OpenTraceUI/LocalizedStrings/OpenTraceString.swift
+
+xcassets:
+  inputs: OpenTrace
+  outputs:
+    templatePath: Templates/OpenTraceAssetsTemplate.stencil
+    output: OpenTraceUI/Sources/OpenTraceUI/DesignTokens/Assets.swift

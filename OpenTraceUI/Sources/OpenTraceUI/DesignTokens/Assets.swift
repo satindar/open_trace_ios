@@ -41,5 +41,8 @@ public extension Color {
 }
 
 public extension UIImage {
-  static var welcomeSceneMap: UIImage { UIImage(named: "welcomeSceneMap")! }
+  static var welcomeScreenImageFour: UIImage { UIImage(named: "welcomeScreenImageFour")! }
+  static var welcomeScreenImageOne: UIImage { UIImage(named: "welcomeScreenImageOne")! }
+  static var welcomeScreenImageThree: UIImage { UIImage(named: "welcomeScreenImageThree")! }
+  static var welcomeScreenImageTwo: UIImage { UIImage(named: "welcomeScreenImageTwo")! }
 }

@@ -1,4 +1,14 @@
-// String copied from the Android app - Need to audit this
+"onboardOneSectionLabel" = "Introduction";
+"onboardTwoSectionLabel" = "Made for Teams";
+"onboardThreeSectionLabel" = "Device Detection";
+"onboardFourSectionLabel" = "Location Permission";
+"onboardOneSectionDescription" = "Social Distance Alarm helps maintain social distance. It can see other devices with the app ON and tell you when they are too close.";
+"onboardTwoSectionDescription" = "Use this for teams of people.\nEveryone’s app must be turned ON.\nAll data is stored locally.";
+"onboardThreeSectionDescription" = "Detection will run unless paused.  While paused, the app will not detect other devices or be able to be detected";
+"onboardFourSectionDescription" = "It works by using Bluetooth’s signal strength. It needs location, and Bluetooth access, to alert you when other app users are too close.";
+
+
+// Unused strings copied from the Android app below this line
 
 "distance" = "Distance";
 "appName" = "Social Distance Alarm";
@@ -22,17 +32,12 @@
 "dangerNotificationTitle" = "Danger";
 "dangerNotificationText" = "Another app was getting very close";
 "helloBlankFragment" = "Hello blank fragment";
-"onboardOneSectionLabel" = "Introduction";
-"onboardTwoSectionLabel" = "More Details";
-"onboardFourSectionLabel" = "Location Permission";
+
 "skip" = "Skip";
 "finish" = "Finish";
 "personIcon" = "Person Icon";
 "bluetoothSignalIcon" = "Bluetooth signal icon";
 "actionNotificationSettings" = "Notification Settings";
 "alarm" = "Alarm";
-"onboardThreeSectionLabel" = "Device detection";
-"onboardThreeSectionDescription" = "Detection will run unless paused.  While paused, the app will not detect other devices or be able to be detected";
-"onboardOneSectionDescription" = "Social Distance Alarm helps maintain social distance. It can see other devices with the app ON and tell you when they are too close.";
-"onboardTwoSectionDescription" = "Use this for teams of people. Everyone’s app must be turned ON. All data is stored locally.";
-"onboardFourSectionDescription" = "It works by using Bluetooth’s signal strength. It needs location, and Bluetooth access, to alert you when other app users are too close.";
+
+

@@ -24,7 +24,7 @@ extension TabBarDestination: Navigatable {
 
     switch self {
     case .distance:
-      navCon.viewControllers = [UIHostingController(rootView: DistanceView())]
+      navCon.viewControllers = [DistanceViewController(rootView: DistanceView())]
     case .history:
       navCon.viewControllers = [UIHostingController(rootView: HistoryView())]
     case .settings:
@@ -32,6 +32,7 @@ extension TabBarDestination: Navigatable {
     }
 
     navCon.tabBarItem = tabBarItem
+    navCon.applyStandardStyle()
     return navCon
   }
 

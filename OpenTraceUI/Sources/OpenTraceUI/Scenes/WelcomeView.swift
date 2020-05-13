@@ -40,8 +40,8 @@ public struct WelcomeView: View {
   public var body: some View {
     VStack(spacing: 20) {
       PagerView(pageCount: pageViewModels.count, currentIndex: $currentPage) {
-        ForEach(pageViewModels, id: \.headlineText) { viewModel in
-          WelcomePageView(viewModel: viewModel)
+        ForEach(pageViewModels, id: \.headlineText) { pageViewModel in
+          WelcomePageView(viewModel: pageViewModel)
         }
       }
 

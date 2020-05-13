@@ -4,7 +4,7 @@ public struct HistoryView: View {
   public init() {}
 
   public var body: some View {
-    Text("History")
+    Text(String.Local.historySceneTitle)
   }
 }
 

@@ -41,6 +41,7 @@ public extension Color {
 }
 
 public extension UIImage {
+  static var kunaiLogo: UIImage { UIImage(named: "kunaiLogo")! }
   static var welcomeScreenImageFour: UIImage { UIImage(named: "welcomeScreenImageFour")! }
   static var welcomeScreenImageOne: UIImage { UIImage(named: "welcomeScreenImageOne")! }
   static var welcomeScreenImageThree: UIImage { UIImage(named: "welcomeScreenImageThree")! }

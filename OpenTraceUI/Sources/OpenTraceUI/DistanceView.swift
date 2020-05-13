@@ -5,7 +5,7 @@ public struct DistanceView: View {
   public init() {}
 
   public var body: some View {
-    Text(String.Local.distance)
+    Text(String.Local.distanceSceneTitle)
   }
 }
 

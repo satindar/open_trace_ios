@@ -39,19 +39,19 @@ extension TabBarDestination: Navigatable {
     switch self {
     case .distance:
       return UITabBarItem(
-        title: "Distance",
+        title: String.Local.distanceSceneTitle,
         image: UIImage(systemName: "wifi"),
         selectedImage: UIImage(systemName: "wifi")
       )
     case .history:
       return UITabBarItem(
-        title: "History",
+        title: String.Local.historySceneTitle,
         image: UIImage(systemName: "timer"),
         selectedImage: UIImage(systemName: "timer")
       )
     case .settings:
       return UITabBarItem(
-        title: "Settings",
+        title: String.Local.settingsSceneTitle,
         image: UIImage(systemName: "gear"),
         selectedImage: UIImage(systemName: "gear")
       )
@@ -60,7 +60,7 @@ extension TabBarDestination: Navigatable {
 
   private static func tabBarVC(services: Services, navigator: Navigator) -> UITabBarController {
     let tabBarController = UITabBarController()
-    tabBarController.tabBar.tintColor = .systemRed
+    tabBarController.tabBar.tintColor = .appRed
     tabBarController.viewControllers = TabBarDestination.allCases.map {
       $0.viewController(services: services, navigator: navigator)
     }

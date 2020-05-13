@@ -10,10 +10,6 @@ public final class DistanceViewController: UIHostingController<DistanceView> {
   @objc dynamic required init?(coder _: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-
-  override public func viewDidLoad() {
-    super.viewDidLoad()
-  }
 }
 
 public struct DistanceView: View {

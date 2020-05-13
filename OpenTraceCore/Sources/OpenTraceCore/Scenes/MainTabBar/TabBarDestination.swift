@@ -26,9 +26,9 @@ extension TabBarDestination: Navigatable {
     case .distance:
       navCon.viewControllers = [DistanceViewController(rootView: DistanceView())]
     case .history:
-      navCon.viewControllers = [UIHostingController(rootView: HistoryView())]
+      navCon.viewControllers = [HistoryViewController(rootView: HistoryView())]
     case .settings:
-      navCon.viewControllers = [UIHostingController(rootView: SettingsView())]
+      navCon.viewControllers = [SettingsViewController(rootView: SettingsView())]
     }
 
     navCon.tabBarItem = tabBarItem
